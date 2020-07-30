@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'ClipDate App'),
     );
   }
 }
@@ -62,6 +62,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  var _datetime="datetime";
 
   void _incrementCounter() {
     setState(() {
@@ -71,20 +72,19 @@ class _MyHomePageState extends State<MyHomePage> {
       // _counter without calling setState(), then the build method would not be
       // called again, and so nothing would appear to happen.
       _counter+=2;
-
+      _datetime ="";
       var now = new DateTime.now();
 
 
       //final DateFormat formatter = DateFormat('yyyy-MM-dd H:m:s');
-      final DateFormat formatter = DateFormat('dd/MM/yyyy H:mm:s');
+      final DateFormat formatter = DateFormat('dd/MM/yyyy H:mm:ss');
       final String formatted = formatter.format(now);
       print(formatted); // something like 2013-04-20
 
 
        //var moonLanding = DateTime.parse("1969-07-20 20:18:04Z");  // 8:18pm
-       var str = formatted;
-
-      FlutterClipboard.copy(str); //.then(( value ) => print('copied'));
+       _datetime = formatted;
+      FlutterClipboard.copy(_datetime); //.then(( value ) => print('copied'));
       //Toast.sw(message: str + " copied",duration: 0);
 
 
@@ -132,10 +132,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'Push button to save date time to clipboard',
             ),
             Text(
-              '$_counter',
+              '$_datetime',
               style: Theme.of(context).textTheme.headline4,
             ),
           ],

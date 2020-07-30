@@ -92,8 +92,16 @@
         "source": "/home/boony/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/layout-v21/notification_action.xml"
     },
     {
+        "merged": "/home/boony/Documents/dev/mobile/clipdate/build/app/intermediates/res/merged/debug/drawable_toast_bg.xml.flat",
+        "source": "/home/boony/Documents/dev/mobile/clipdate/build/fluttertoast/intermediates/packaged_res/debug/drawable/toast_bg.xml"
+    },
+    {
         "merged": "/home/boony/Documents/dev/mobile/clipdate/build/app/intermediates/res/merged/debug/drawable_notification_bg_low.xml.flat",
         "source": "/home/boony/.gradle/caches/transforms-2/files-2.1/a528b13ac93e64cafa3d0480e2c93207/core-1.1.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/boony/Documents/dev/mobile/clipdate/build/app/intermediates/res/merged/debug/layout_toast_custom.xml.flat",
+        "source": "/home/boony/Documents/dev/mobile/clipdate/build/fluttertoast/intermediates/packaged_res/debug/layout/toast_custom.xml"
     },
     {
         "merged": "/home/boony/Documents/dev/mobile/clipdate/build/app/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
@@ -130,6 +138,10 @@
     {
         "merged": "/home/boony/Documents/dev/mobile/clipdate/build/app/intermediates/res/merged/debug/drawable_launch_background.xml.flat",
         "source": "/home/boony/Documents/dev/mobile/clipdate/android/app/src/main/res/drawable/launch_background.xml"
+    },
+    {
+        "merged": "/home/boony/Documents/dev/mobile/clipdate/build/app/intermediates/res/merged/debug/drawable_corner.xml.flat",
+        "source": "/home/boony/Documents/dev/mobile/clipdate/build/fluttertoast/intermediates/packaged_res/debug/drawable/corner.xml"
     },
     {
         "merged": "/home/boony/Documents/dev/mobile/clipdate/build/app/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
